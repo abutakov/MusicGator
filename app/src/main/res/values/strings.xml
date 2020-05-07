@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Music \'Gator</string>
+    <string name="my_name">Oleksii Butakov</string>
+    <string name="location_text">📍 Sunnyvale, CA</string>
+
+
+    <string name="email_hint">Your Email...</string>
+    <string name="password_hint">Password...</string>
+    <string name="confirm_password_hint">Confirm Password...</string>
+    <string name="forgot_password">Forgot password?</string>
+
+    <string name="login">Login</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="free_account">Freeze account</string>
+    <string name="logout">Log out</string>
+    <string name="share">Share</string>
+
+    <string name="no_account_text">Doesn\'t have account with us?</string>
+    <string name="create_account">Create account</string>
+    <string name="agree">I agree to the</string>
+    <string name="terms_and_conditions">terms and conditions</string>
+
+    <string-array name="spinner_array">
+        <item>Feed</item>
+        <item>Music Wallet</item>
+        <item>Your Profile</item>
+        <item>Log out</item>
+    </string-array>
+
+    <string-array name="spinner_wallet">
+        <item>Wallet</item>
+        <item>Feed</item>
+        <item>Your Profile</item>
+        <item>Log out</item>
+    </string-array>
+
+    <string-array name="spinner_profile">
+        <item>Your Profile</item>
+        <item>Wallet</item>
+        <item>Feed</item>
+    </string-array>
+
+    <string name="wallet">Wallet</string>
+
+</resources>
