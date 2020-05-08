@@ -15,6 +15,13 @@
     <string name="logout">Log out</string>
     <string name="share">Share</string>
 
+    <string name="music_services">Music Services</string>
+    <string name="YTmusic">YouTube Music</string>
+    <string name="AppleMusic">Apple Music</string>
+    <string name="Spotify">Spotify</string>
+    <string name="SoundCloud">SoundCloud</string>
+    <string name="Pandora">Pandora</string>
+
     <string name="no_account_text">Doesn\'t have account with us?</string>
     <string name="create_account">Create account</string>
     <string name="agree">I agree to the</string>

@@ -22,6 +22,8 @@
         </activity>
         <activity android:name=".WalletActivity" >
         </activity>
+        <activity android:name=".SignUpActivity" >
+        </activity>
     </application>
 
 </manifest>

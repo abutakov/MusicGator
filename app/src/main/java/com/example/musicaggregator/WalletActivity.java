@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class WalletActivity extends AppCompatActivity {
 
-    private Button btnLogin;
+    private Button btnOptOut;
     private Spinner spinner;
 
     @Override
@@ -31,18 +31,25 @@ public class WalletActivity extends AppCompatActivity {
                         startActivity(i);
                         break;
                     case "Wallet":
-                        Intent k = new Intent(WalletActivity.this, MainActivity.class);
-                        startActivity(k);
                         break;
-                }
-                if(selectedItem.equals("Your Profile"))
-                {
-                        // do your stuff
+                    case "Log out":
+                        Intent l = new Intent(WalletActivity.this, MainActivity.class);
+                        startActivity(l);
+                        break;
                 }
             } // to close the onItemSelected
             public void onNothingSelected(AdapterView<?> parent)
             {
 
+            }
+        });
+
+        btnOptOut = (Button)findViewById(R.id.button3);
+        btnOptOut.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(WalletActivity.this, MainActivity.class);
+                startActivity(i);
             }
         });
     }

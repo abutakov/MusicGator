@@ -1,5 +1,6 @@
 package com.example.musicaggregator;
 
+import android.Manifest;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -27,10 +28,21 @@ public class FeedActivity extends AppCompatActivity {
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id)
             {
                 String selectedItem = parent.getItemAtPosition(position).toString();
-                if(selectedItem.equals("Your Profile"))
-                {
-                    Intent i = new Intent(FeedActivity.this, ProfileActivity.class);
-                    startActivity(i);
+                switch (selectedItem) {
+                    case "Feed":
+                        break;
+                    case "Music Wallet":
+                        Intent k = new Intent(FeedActivity.this, WalletActivity.class);
+                        startActivity(k);
+                        break;
+                    case "Your Profile":
+                        Intent l = new Intent(FeedActivity.this, ProfileActivity.class);
+                        startActivity(l);
+                        break;
+                    case "Log out":
+                        Intent m = new Intent(FeedActivity.this, MainActivity.class);
+                        startActivity(m);
+                        break;
                 }
             } // to close the onItemSelected
             public void onNothingSelected(AdapterView<?> parent)

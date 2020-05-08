@@ -6,11 +6,13 @@ import android.view.View;
 import android.os.Bundle;
 import android.widget.Button;
 import android.content.Intent;
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private Button btnLogin;
+    private TextView textCreateAcc;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,6 +27,16 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, FeedActivity.class);
                 startActivity(i);
 
+            }
+        });
+
+        textCreateAcc = (TextView) findViewById(R.id.textView3);
+
+        textCreateAcc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, SignUpActivity.class);
+                startActivity(i);
             }
         });
     }
