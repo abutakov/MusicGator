@@ -74,37 +74,62 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="120dp"
                 android:background="#c1c1c1"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/apple_music" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="30dp"
                 android:background="#c1c1c1"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/yt_music" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="30dp"
                 android:background="#c1c1c1"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/soundcloud" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:layout_marginTop="30dp"
+                android:layout_height="120dp"
                 android:background="#c1c1c1"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/apple_music" />
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="300dp"
+                android:layout_height="150dp"
                 android:layout_marginTop="30dp"
                 android:background="#c1c1c1"
-                android:src="@drawable/avatar" />
+                android:src="@drawable/yt_music" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/soundcloud" />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/apple_music" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/yt_music" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="30dp"
+                android:background="#c1c1c1"
+                android:src="@drawable/soundcloud" />
         </LinearLayout>
 
     </ScrollView>
