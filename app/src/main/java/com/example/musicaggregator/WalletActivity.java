@@ -5,7 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +17,7 @@ public class WalletActivity extends AppCompatActivity {
 
     private Button btnOptOut;
     private Spinner spinner;
+    private ImageView btnHeart;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +36,16 @@ public class WalletActivity extends AppCompatActivity {
                         break;
                     case "Wallet":
                         break;
-                    case "Log out":
-                        Intent l = new Intent(WalletActivity.this, MainActivity.class);
+                    case "Your Profile":
+                        Intent l = new Intent(WalletActivity.this, ProfileActivity.class);
                         startActivity(l);
+                        break;
+                    case "Log out":
+                        Toast.makeText(WalletActivity.this,
+                                "You have been logged out",
+                                Toast.LENGTH_LONG).show();
+                        Intent k = new Intent(WalletActivity.this, MainActivity.class);
+                        startActivity(k);
                         break;
                 }
             } // to close the onItemSelected
@@ -50,6 +61,15 @@ public class WalletActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent i = new Intent(WalletActivity.this, MainActivity.class);
                 startActivity(i);
+            }
+        });
+
+        btnHeart = (ImageView) findViewById(R.id.imageView);
+        btnHeart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent m = new Intent(WalletActivity.this, FeedActivity.class);
+                startActivity(m);
             }
         });
     }

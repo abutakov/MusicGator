@@ -6,7 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -17,6 +19,7 @@ public class FeedActivity extends AppCompatActivity {
 
     private Button btnLogin;
     private Spinner spinner;
+    private ImageButton btnPlay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,9 @@ public class FeedActivity extends AppCompatActivity {
                         startActivity(l);
                         break;
                     case "Log out":
+                        Toast.makeText(FeedActivity.this,
+                                "You have been logged out",
+                                Toast.LENGTH_LONG).show();
                         Intent m = new Intent(FeedActivity.this, MainActivity.class);
                         startActivity(m);
                         break;
@@ -48,6 +54,16 @@ public class FeedActivity extends AppCompatActivity {
             public void onNothingSelected(AdapterView<?> parent)
             {
 
+            }
+        });
+
+        btnPlay = (ImageButton) findViewById(R.id.imageButton2);
+        btnPlay.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(FeedActivity.this,
+                        "Music is playing",
+                        Toast.LENGTH_LONG).show();
             }
         });
     }

@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,6 +16,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private Button LogOut;
     private Spinner spinner;
+    private ImageView heartBtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,9 +49,21 @@ public class ProfileActivity extends AppCompatActivity {
         LogOut.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(ProfileActivity.this, MainActivity.class);
-                startActivity(i);
+                Toast.makeText(ProfileActivity.this,
+                        "You have been logged out",
+                        Toast.LENGTH_LONG).show();
+                Intent l = new Intent(ProfileActivity.this, MainActivity.class);
+                startActivity(l);
 
+            }
+        });
+
+        heartBtn = (ImageView) findViewById(R.id.imageView);
+        heartBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent m = new Intent(ProfileActivity.this, FeedActivity.class);
+                startActivity(m);
             }
         });
     }
